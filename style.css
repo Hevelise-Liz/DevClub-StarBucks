@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    margin-top: 1.5%;
+    padding-top: 1.5%;
+    padding-right: 7%;
+    padding-left: 5%;
+  
+    @media screen and (max-width: 800px) {
+      padding-right: 5%;
+    }
+  
+    @media screen and (max-width: 750px) {
+      padding-right: 3%;
+    }
+  
+    @media screen and (max-width: 700px) {
+      padding-right: 0.5%;
+    }
+  }
+  
+  .conteudo {
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
+  }
+  
+  .texto {
+    width: 55%;
+    @media screen and (max-width: 650px) {
+      width: 98%;
+    }
+  }
+  
+  .imagem {
+    width: 40%;
+  
+    display: flex;
+    justify-content: flex-end;
+  
+    @media screen and (max-width: 650px) {
+      width: 98%;
+      justify-content: CENTER;
+    }
+  
+    @media screen and (max-width: 360px) {
+      justify-content: center;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  
+    @media screen and (max-width: 650px) {
+      flex-direction: ROW;
+  
+      justify-content: CENTER;
+    }
+  
+    @media screen and (max-width: 650px) {
+      margin-top: 7%;
+    }
+  
+    @media screen and (max-width: 495px) {
+      margin-top: 10%;
+    }
+  
+    @media screen and (max-width: 420px) {
+      margin-top: 12%;
+    }
+    @media screen and (max-width: 402px) {
+      margin-top: 14%;
+    }
+  
+    @media screen and (max-width: 350px) {
+      margin-top: 16%;
+    }
+  }
+  
+  button {
+    background-color: #017143;
+    color: #fff;
+    border: none;
+    padding: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 20px;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+    @media screen and (max-width: 200px) {
+      padding-left: 8%;
+      padding-right: 8%;
+      margin-top: 5%;
+    }
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    line-height: 1.1;
+  
+    @media screen and (max-width: 200px) {
+      font-size: 1.5em;
+      margin-bottom: 6%;
+    }
+  }
+  
+  span {
+    color: #017143;
+    font-size: 110%;
+    font-weight: 900;
+  
+    @media screen and (max-width: 200px) {
+      font-size: 110%;
+      font-weight: 600;
+    }
+  }
+  
+  p {
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+  
+  .logo {
+    width: 80px;
+  
+    @media screen and (max-width: 200px) {
+      width: 60px;
+    }
+  }
+  
+  .starbucks {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+  
+    @media screen and (max-width: 1130px) {
+      width: 70%;
+    }
+  
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+    }
+  
+    @media screen and (max-width: 945px) {
+      width: 80%;
+      height: 90%;
+    }
+  
+    @media screen and (max-width: 850px) {
+      width: 90%;
+      height: 90%;
+    }
+  
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      height: 90%;
+    }
+  
+    @media screen and (max-width: 650px) {
+      max-width: 250px;
+    }
+  
+    @media screen and (max-width: 360px) {
+      margin-top: 8%;
+    }
+  }
+  
+  .pequena {
+    width: 3.5%;
+  
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  
+    @media screen and (max-width: 780px) {
+      margin-top: 10%;
+      margin-bottom: 3%;
+    }
+  
+    @media screen and (max-width: 650px) {
+      width: 6%;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+  
+    @media screen and (max-width: 360px) {
+      margin-left: 1%;
+      width: 8%;
+      margin-top: 8%;
+    }
+  
+    @media screen and (max-width: 200px) {
+      width: 17%;
+    }
+  }
+  
+  .pequena:hover {
+    transform: translateY(-25px);
+  }
+  
+  .circulo {
+    background: #8aaa3d;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    clip-path: circle(80vh at right 100vh);
+    z-index: -1;
+  
+    @media screen and (max-width: 1130px) {
+      clip-path: circle(70vh at right 90vh);
+    }
+  
+    @media screen and (max-width: 1000px) {
+      clip-path: circle(60vh at right 80vh);
+    }
+  
+    @media screen and (max-width: 850px) {
+      clip-path: circle(50vh at right 70vh);
+    }
+  
+    @media screen and (max-width: 755px) {
+      clip-path: circle(40vh at right 60vh);
+    }
+  
+    @media screen and (max-width: 650px) {
+      clip-path: circle(70vh at right 120vh);
+    }
+  
+    @media screen and (max-width: 495px) {
+      clip-path: circle(60vh at right 110vh);
+    }
+  }
+  
